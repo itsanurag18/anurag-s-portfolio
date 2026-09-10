@@ -1,29 +1,41 @@
 /**
- * Central portfolio data. Swap placeholder values for real content here —
- * every section on the page reads from this file.
+ * Central portfolio data — single source of truth.
+ *
+ * Every section on the page reads from this file. Replace the placeholder
+ * values below with your real details. Values marked with "REPLACE" are
+ * intended to be swapped out; values marked "EDIT" can be fine-tuned.
  */
 
+// -----------------------------------------------------------------------------
+// PROFILE / HERO
+// -----------------------------------------------------------------------------
+// Replace with your real name, role, location, email and social URLs.
 export const profile = {
-  name: "Anurag",
+  name: "Your Name",
   role: "Software Developer",
   eyebrow: "SOFTWARE DEVELOPER • BUILDER • PROBLEM SOLVER",
   statusBadge: "Currently learning & building",
   headline: "Building modern digital experiences with code.",
   subtitle:
-    "I build thoughtful, scalable and user-focused digital experiences while continuously learning and exploring modern technologies.",
+    "I am a software development student passionate about building modern web applications and continuously improving my problem-solving and development skills.",
   tagline: "Designing and shipping software, one thoughtful detail at a time.",
-  location: "India",
-  email: "anurag@example.com",
+  location: "Your Location",
+  email: "your.email@example.com",
   socials: {
-    github: "https://github.com/anurag",
-    linkedin: "https://linkedin.com/in/anurag",
+    github: "https://github.com/your-username",
+    linkedin: "https://linkedin.com/in/your-profile",
   },
 };
 
+// -----------------------------------------------------------------------------
+// ABOUT
+// -----------------------------------------------------------------------------
+// Edit the paragraphs, focus list and highlight cards to reflect your own
+// learning focus, core principles and problem-solving mindset.
 export const about = {
   title: "More than just code.",
   paragraphs: [
-    "I care about how software feels. A fast page, a clear empty state, a form that tells you exactly what went wrong — those details are the difference between a project that works and a product people trust.",
+    "I am a software development student passionate about building modern web applications and continuously improving my problem-solving and development skills.",
     "My approach is simple: understand the problem deeply, keep the solution small, and iterate in public. I read source code as often as documentation, and I ship early so real feedback shapes the next version.",
     "Right now I'm sharpening my fundamentals — data structures, systems design, and the parts of the web platform most frameworks abstract away.",
   ],
@@ -35,23 +47,28 @@ export const about = {
   ],
   highlights: [
     {
-      title: "Product-minded",
+      title: "Learning-first mindset",
       description:
-        "I start from the user's job to be done, not the framework, then work backwards to the architecture.",
+        "I treat every project as a chance to understand something new, then document what I learned for the next build.",
     },
     {
-      title: "Detail obsessed",
+      title: "Core principles",
       description:
-        "Motion, spacing, contrast and copy get the same review as the business logic behind them.",
+        "Clarity, consistency and care — I believe good software is built from small decisions made well across the whole stack.",
     },
     {
-      title: "Always learning",
+      title: "Problem solver",
       description:
-        "A steady rhythm of building, breaking and reading — every project ends with notes on what to do better.",
+        "I enjoy breaking complex problems into manageable pieces and finding practical solutions that actually work.",
     },
   ],
 };
 
+// -----------------------------------------------------------------------------
+// EXPERIENCE / JOURNEY
+// -----------------------------------------------------------------------------
+// Replace these placeholders with your real academic projects, learning
+// milestones and roles. Avoid inventing companies, internships or clients.
 export type TimelineItem = {
   period: string;
   title: string;
@@ -62,24 +79,24 @@ export type TimelineItem = {
 export const timeline: TimelineItem[] = [
   {
     period: "2026 — Present",
-    title: "Freelance Developer",
-    organization: "Independent",
+    title: "Software Development Journey",
+    organization: "Personal Growth",
     description:
-      "Designing and shipping full-stack web applications for small teams, from first wireframe to deployed product.",
+      "Building projects to strengthen full-stack skills, from first wireframe to deployed product.",
   },
   {
     period: "2025",
-    title: "Software Development Intern",
-    organization: "Tech Startup",
+    title: "Academic Project",
+    organization: "Learning Environment",
     description:
-      "Built internal dashboards in React and TypeScript, wrote REST endpoints, and cut a key page's load time by half.",
+      "Developed a structured web application as part of coursework, practicing React, APIs and database design.",
   },
   {
     period: "2024",
-    title: "Open Source Contributor",
-    organization: "Community Projects",
+    title: "Learning Milestone",
+    organization: "Self-directed Study",
     description:
-      "Contributed bug fixes, docs and small features to JavaScript tooling projects and learned to work through code review.",
+      "Completed guided courses and built small projects to learn modern JavaScript, TypeScript and component-based UI.",
   },
   {
     period: "2023",
@@ -90,6 +107,11 @@ export const timeline: TimelineItem[] = [
   },
 ];
 
+// -----------------------------------------------------------------------------
+// PROJECTS
+// -----------------------------------------------------------------------------
+// Replace titles, descriptions, tech stacks and links with your real projects.
+// Keep `featured: true` on the project you want to highlight largest.
 export type Project = {
   name: string;
   tagline: string;
@@ -102,46 +124,48 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Nimbus Analytics",
-    tagline: "Realtime product analytics dashboard",
+    name: "AI Productivity Assistant",
+    tagline: "Smart task and workflow helper",
     description:
-      "A full-stack analytics tool with event ingestion, live charts and shareable reports. Built to stay readable at a million rows.",
-    tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind"],
+      "A productivity tool that uses AI to summarize tasks, suggest priorities and help users plan their day more effectively.",
+    tech: ["React", "TypeScript", "Node.js", "OpenAI API", "Tailwind"],
     demo: "https://example.com",
-    github: "https://github.com/anurag",
+    github: "https://github.com/your-username",
     featured: true,
   },
   {
-    name: "Kanban Flow",
-    tagline: "Collaborative task board",
-    description: "Drag-and-drop boards with optimistic updates and role-based sharing.",
-    tech: ["React", "Zustand", "Supabase"],
+    name: "Modern E-Commerce Platform",
+    tagline: "End-to-end online store",
+    description:
+      "A responsive storefront with product browsing, cart management and a streamlined checkout experience.",
+    tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
     demo: "https://example.com",
-    github: "https://github.com/anurag",
+    github: "https://github.com/your-username",
   },
   {
-    name: "DevNotes",
-    tagline: "Markdown notes for engineers",
-    description: "Offline-first notes with code blocks, tags and instant fuzzy search.",
-    tech: ["Next.js", "IndexedDB", "MDX"],
-    github: "https://github.com/anurag",
-  },
-  {
-    name: "PromptKit",
-    tagline: "AI prompt workbench",
-    description: "Compare model outputs side by side and version the prompts that work.",
-    tech: ["TypeScript", "OpenAI API", "Vite"],
+    name: "Developer Dashboard",
+    tagline: "Analytics and metrics for projects",
+    description:
+      "A clean dashboard that aggregates project metrics, recent activity and health checks in one place.",
+    tech: ["React", "Vite", "Recharts", "REST API"],
     demo: "https://example.com",
+    github: "https://github.com/your-username",
   },
   {
-    name: "ShipLog",
-    tagline: "Tiny changelog service",
-    description: "A drop-in changelog widget with an API and a one-file editor.",
-    tech: ["Node.js", "SQLite", "Hono"],
-    github: "https://github.com/anurag",
+    name: "Real-Time Collaboration App",
+    tagline: "Shared workspace for teams",
+    description:
+      "A lightweight collaborative space where users can create, edit and organize content together in real time.",
+    tech: ["React", "WebSockets", "Express", "MongoDB"],
+    demo: "https://example.com",
+    github: "https://github.com/your-username",
   },
 ];
 
+// -----------------------------------------------------------------------------
+// SKILLS
+// -----------------------------------------------------------------------------
+// Edit the categories and items to match the technologies you actually use.
 export const skills: { category: string; items: string[] }[] = [
   {
     category: "Frontend",
@@ -165,6 +189,11 @@ export const skills: { category: string; items: string[] }[] = [
   },
 ];
 
+// -----------------------------------------------------------------------------
+// CERTIFICATIONS
+// -----------------------------------------------------------------------------
+// Replace with real credentials when earned. Until then, these are clearly
+// marked placeholders and should not be presented as completed achievements.
 export type Certification = {
   name: string;
   issuer: string;
@@ -174,28 +203,44 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
-    name: "Full-Stack Web Development",
-    issuer: "Coursera",
-    year: "2025",
-    credentialUrl: "https://example.com",
+    name: "[Certification Name] — [Issuing Organization/Platform]",
+    issuer: "Placeholder entry — replace with real credential",
+    year: "YYYY",
   },
-  { name: "AWS Cloud Practitioner", issuer: "Amazon Web Services", year: "2025" },
   {
-    name: "Data Structures & Algorithms",
-    issuer: "Udemy",
-    year: "2024",
-    credentialUrl: "https://example.com",
+    name: "[Certification Name] — [Issuing Organization/Platform]",
+    issuer: "Placeholder entry — replace with real credential",
+    year: "YYYY",
   },
-  { name: "Responsive Web Design", issuer: "freeCodeCamp", year: "2023" },
+  {
+    name: "[Certification Name] — [Issuing Organization/Platform]",
+    issuer: "Placeholder entry — replace with real credential",
+    year: "YYYY",
+  },
+  {
+    name: "[Certification Name] — [Issuing Organization/Platform]",
+    issuer: "Placeholder entry — replace with real credential",
+    year: "YYYY",
+  },
 ];
 
+// -----------------------------------------------------------------------------
+// STATISTICS
+// -----------------------------------------------------------------------------
+// Neutral, editable milestone figures. Update these with your own real numbers
+// as your portfolio grows.
 export const stats = [
-  { label: "Projects", value: "18+" },
-  { label: "Technologies", value: "25+" },
-  { label: "Hours of Coding", value: "3,000+" },
-  { label: "Certifications", value: "4" },
+  { label: "Projects Built", value: "04+" },
+  { label: "Core Technologies", value: "10+" },
+  { label: "Hours of Coding", value: "500+" },
+  { label: "Learning Milestones", value: "02+" },
 ];
 
+// -----------------------------------------------------------------------------
+// NAVIGATION SECTIONS
+// -----------------------------------------------------------------------------
+// Edit labels if you rename or reorder sections; add an entry here only if
+// a matching section exists on the page.
 export const sections = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
