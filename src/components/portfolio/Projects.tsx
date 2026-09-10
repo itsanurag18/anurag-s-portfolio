@@ -4,7 +4,7 @@ import { projects } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 import { Section } from "./Section";
 
-function Links({ demo, github }: { demo?: string; github?: string }) {
+function Links({ demo, github }: { demo?: string | undefined; github?: string | undefined }) {
   return (
     <div className="mt-6 flex items-center gap-3">
       {demo && (
