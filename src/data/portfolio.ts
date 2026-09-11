@@ -35,7 +35,7 @@ export const profile = {
 export const about = {
   title: "More than just code.",
   paragraphs: [
-    "I am a software development student passionate about building modern web applications and continuously improving my problem-solving and development skills.",
+    "I am Anurag, a B.Tech Computer Science and Engineering student passionate about building modern web applications and continuously improving my problem-solving and development skills.",
     "My approach is simple: understand the problem deeply, keep the solution small, and iterate in public. I read source code as often as documentation, and I ship early so real feedback shapes the next version.",
     "Right now I'm sharpening my fundamentals — data structures, systems design, and the parts of the web platform most frameworks abstract away.",
   ],
