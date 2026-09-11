@@ -11,13 +11,13 @@
 // -----------------------------------------------------------------------------
 // Replace with your real name, role, location, email and social URLs.
 export const profile = {
-  name: "Your Name",
-  role: "Software Developer",
-  eyebrow: "SOFTWARE DEVELOPER • BUILDER • PROBLEM SOLVER",
-  statusBadge: "Currently learning & building",
+  name: "Anurag",
+  role: "B.Tech CSE Student",
+  eyebrow: "B.TECH CSE STUDENT • BUILDER • PROBLEM SOLVER",
+  statusBadge: "Currently a B.Tech CSE student",
   headline: "Building modern digital experiences with code.",
   subtitle:
-    "I am a software development student passionate about building modern web applications and continuously improving my problem-solving and development skills.",
+    "I am a B.Tech Computer Science and Engineering student passionate about building modern web applications and continuously improving my problem-solving and development skills.",
   tagline: "Designing and shipping software, one thoughtful detail at a time.",
   location: "Your Location",
   email: "your.email@example.com",
@@ -35,7 +35,7 @@ export const profile = {
 export const about = {
   title: "More than just code.",
   paragraphs: [
-    "I am a software development student passionate about building modern web applications and continuously improving my problem-solving and development skills.",
+    "I am Anurag, a B.Tech Computer Science and Engineering student passionate about building modern web applications and continuously improving my problem-solving and development skills.",
     "My approach is simple: understand the problem deeply, keep the solution small, and iterate in public. I read source code as often as documentation, and I ship early so real feedback shapes the next version.",
     "Right now I'm sharpening my fundamentals — data structures, systems design, and the parts of the web platform most frameworks abstract away.",
   ],
